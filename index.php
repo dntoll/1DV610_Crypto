@@ -18,8 +18,13 @@ if (isset($_GET["text"])) {
 		<title>Crypto</title>
 	</head>
 	<body>
-		<?php $view->show(); 
-			$converter->show();
+		<?php 
+			$view->showForm(); 
+			
+			//If form is submited then show convertion
+			if(isset($_GET["text"]) ) {
+				$view->showConvertion($converter->getConvertion());
+			}
 		?>
 	</body>
 </html>

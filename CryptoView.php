@@ -1,8 +1,15 @@
 <?php 
 
+/*
+ * Handle html output
+ */
 class CryptoView {
-	public function show() {
+	public function showForm() {
 		echo $this->toHTML();
+	}
+
+	public function showConvertion($convertion) {
+		echo "<p>" . $convertion . "</p>";
 	}
 
 	public function toHTML() {
