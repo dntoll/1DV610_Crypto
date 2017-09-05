@@ -6,7 +6,7 @@ require_once("CryptoConverter.php");
 $view = new CryptoView();
 
 if (isset($_GET["text"])) {
-	$converter = new CryptoConverter($_GET["text"]);
+	$converter = new CryptoConverter($_GET);
 }
 
 ?>

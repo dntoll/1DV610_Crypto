@@ -10,8 +10,8 @@ class CryptoView {
 		<h2>Konvertera till rövarspråket</h2>
 		<form action='index.php' method='get'>
 			<input type='text' name='text' />
-			<button type='submit'>Rövarspråket</button>
-			<button type='submit'>Svenska</button>
+			<button type='submit' name='chosen_language' value='robber'>Rövarspråket</button>
+			<button type='submit' name='chosen_language' value='swedish'>Svenska</button>
 		</form>";
 
 		return $ret;
